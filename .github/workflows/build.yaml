@@ -9,6 +9,8 @@ jobs:
     # This job runs on Linux
     runs-on: ubuntu-latest
     steps:
+      - name: Pull code
+        uses: actions/checkout@v2
       - name: Print current directory
         run: pwd
       - name: List files in directory
